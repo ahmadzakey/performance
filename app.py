@@ -8,7 +8,7 @@ from finance_dashboard import render_finance_dashboard
 # )
 
 df = pd.read_parquet(
-    r"performance\Input\performance_monitoring_finance.parquet"
+    "Input/performance_monitoring_finance.parquet"
 )
 
 
