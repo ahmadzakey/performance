@@ -29,7 +29,8 @@ def proces_df(old_path, new_path):
 
     append = append.sort_values(by='txn_date', ascending=True).reset_index(drop=True)
 
-    output_path = r"C:\Users\User\OneDrive\Business\My busines\Streamlit\Monitoring\Input\performance_monitoring_finance.parquet"
+    output_path = r"C:\Users\User\OneDrive\Business\My busines\performance\Input\performance_monitoring_finance.parquet"
+
     append.to_parquet(output_path, index=False)
 
 
